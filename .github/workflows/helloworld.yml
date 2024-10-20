@@ -10,7 +10,7 @@ jobs:
   helloworldjobname:
    runs-on: ubuntu-latest
    steps: 
-     -name: "printhelloworld"
-      run: echo "hello"
+     - name: "printhelloworld"
+       run: echo "hello"
 
       
