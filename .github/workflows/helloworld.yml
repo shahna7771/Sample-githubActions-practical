@@ -13,7 +13,6 @@ jobs:
      - name: "printhelloworld"
        run: echo "hello"
 
-     -  name: "printlocation"
-        run: pwd
-        
+    
+
    
