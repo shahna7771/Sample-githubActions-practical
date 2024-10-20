@@ -12,5 +12,10 @@ jobs:
    steps: 
      - name: "printhelloworld"
        run: echo "hello"
+   
+   steps:
+     - name: "printlocation"
+       run: pwd
+   
 
       
