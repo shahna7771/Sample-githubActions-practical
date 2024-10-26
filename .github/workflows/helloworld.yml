@@ -1,15 +1,14 @@
-name: "helloworldworkflows"
+name: "multieventpipeline"
 
 on: 
   push:
     branches:
-        -master
-        -production
+      -master
+      -production
 
-jobs: 
-  helloworldjobname:
-   runs-on: ubuntu-latest
-   steps: 
-     - name: "printhelloworld"
-       run: echo "hello"
-   
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      -name: "Running on master push"
+       run: echo "hello world" 
