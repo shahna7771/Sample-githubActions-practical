@@ -3,12 +3,12 @@ name: "multieventpipeline"
 on: 
   push:
     branches:
-      -master
-      -production
+      - master
+      - production
 
 jobs:
   on-push:
     runs-on: ubuntu-latest
     steps:
-      -name: "Running on master push"
-       run: echo "hello world" 
+      - name: "Running on master push"
+        run: echo "hello world" 
