@@ -11,4 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Running on master push"
-        run: echo "hello world" 
+        run: echo "hello world"
+      - name: "date"
+        run: date
+             ls
