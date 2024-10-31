@@ -1,0 +1,26 @@
+name: multi_event_pipeline
+on:
+  push: 
+    branches:
+      - master
+      - production
+  
+  pull_request:
+    branches:
+      - master
+    types:
+      - opened
+      - closed
+  
+  workflow_dispatch:
+
+jobs:
+  on-push:   #job1 name
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Running on master/production push branches "
+        run: echo "Push Successfull"
+  
+  
+
